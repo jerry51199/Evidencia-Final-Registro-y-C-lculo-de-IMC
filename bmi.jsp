@@ -30,3 +30,4 @@
     <p>Tu IMC es: <%= bmi %></p>
     <p>Categoría: <%= category %></p>
 <% } %>
+<p><a href="index.jsp" onclick="<% session.invalidate(); %>">Cerrar sesión y regresar a pantalla principal</a></p>
