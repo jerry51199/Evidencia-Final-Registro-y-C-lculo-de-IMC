@@ -21,5 +21,6 @@
 </form>
 
 <p>¿Ya tienes cuenta? <a href="login.jsp">Inicia sesión aquí</a></p>
+<p><a href="index.jsp">Regresar a la pantalla principal</a></p>
 </body>
 </html>
