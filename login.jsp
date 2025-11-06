@@ -19,5 +19,6 @@
 </form>
 
 <p>¿No tienes cuenta? <a href="register.jsp">Regístrate aquí</a></p>
+<p><a href="index.jsp">Regresar a la pantalla principal</a></p>
 </body>
 </html>
