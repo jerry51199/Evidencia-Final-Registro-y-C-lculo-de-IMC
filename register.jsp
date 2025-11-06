@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Registro de Usuario</title>
-</head>
-<body>
 <h2>Registro de Usuario</h2>
 
 <% String message = (String) request.getAttribute("message"); %>
@@ -22,5 +15,4 @@
 
 <p>¿Ya tienes cuenta? <a href="login.jsp">Inicia sesión aquí</a></p>
 <p><a href="index.jsp">Regresar a la pantalla principal</a></p>
-</body>
-</html>
+
