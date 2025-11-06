@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Login de Usuario</title>
-</head>
-<body>
-<h2>Login</h2>
+<h2>Iniciar Sesión</h2>
 
 <% String error = (String) request.getAttribute("error"); %>
 <% if (error != null) { %>
@@ -20,5 +13,3 @@
 
 <p>¿No tienes cuenta? <a href="register.jsp">Regístrate aquí</a></p>
 <p><a href="index.jsp">Regresar a la pantalla principal</a></p>
-</body>
-</html>
