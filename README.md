@@ -1,31 +1,41 @@
-Calculadora de IMC con Registro e Inicio de Sesión
-Descripción
+🏋️ Calculadora de IMC Web con Registro e Login
+🚀 Descripción
 
-Aplicación web desarrollada en Java con el patrón MVC que permite a los usuarios registrarse, iniciar sesión y calcular su Índice de Masa Corporal (IMC). La aplicación muestra la categoría del IMC y permite cerrar sesión para regresar a la pantalla principal.
+Bienvenido a la Calculadora de IMC Web, una aplicación interactiva que permite a los usuarios:
 
-Funcionalidades
+Registrarse y crear su cuenta.
 
-Registro de usuarios: Permite crear un nuevo usuario con nombre de usuario y contraseña.
+Iniciar sesión de manera segura.
 
-Inicio de sesión: Valida credenciales para acceder a la calculadora de IMC.
+Calcular su Índice de Masa Corporal (IMC) y conocer su categoría: Bajo peso, Normal, Sobrepeso u Obesidad.
 
-Cálculo de IMC: Recibe peso y altura, calcula el IMC y muestra la categoría correspondiente.
+Cerrar sesión y volver a la pantalla principal.
 
-Cierre de sesión: Permite al usuario cerrar sesión y regresar a la pantalla principal.
+Todo esto con una interfaz sencilla y fluida, basada en Java, JSP y Servlets usando el patrón MVC.
 
-Tecnologías
+🎯 Funcionalidades
+
+📝 Registro de Usuario: Crea una cuenta con nombre de usuario y contraseña.
+
+🔑 Inicio de Sesión: Accede a tu perfil y calcula tu IMC.
+
+⚖️ Cálculo de IMC: Ingresa peso y altura para conocer tu estado de salud.
+
+🔄 Cerrar Sesión: Vuelve a la pantalla principal de forma segura.
+
+🛠 Tecnologías
 
 Lenguaje: Java 17
 
-Framework: Servlet/JSP
+Framework: Servlets / JSP
 
 Servidor: Apache Tomcat 10
 
-Gestor de dependencias: Maven
+Gestor de Dependencias: Maven
 
-Patrón: MVC (Modelo-Vista-Controlador)
+Patrón de Diseño: MVC (Modelo-Vista-Controlador)
 
-Estructura del Proyecto
+📂 Estructura del Proyecto
 bmi-webapp/
 │
 ├── src/main/java/com/example/bmi/controller/
@@ -45,60 +55,75 @@ bmi-webapp/
 │   └── bmi.jsp
 │
 └── pom.xml
-
-
 Modelo: User.java, Database.java
 
 Vista: index.jsp, register.jsp, login.jsp, bmi.jsp
 
 Controlador: BmiServlet.java, LoginServlet.java, RegisterServlet.java, LogoutServlet.java
 
-Clases Principales
 
-User.java:
+🧩 Clases Principales
 
-Contiene atributos del usuario (username, password, weight, height)
+User.java
 
-Método calculateBMI() para calcular el IMC.
+Contiene atributos: username, password, weight, height
 
-Database.java:
+Método calculateBMI() para calcular IMC.
+
+Database.java
 
 Simula almacenamiento de usuarios en memoria.
 
-Métodos: addUser(User user) y getUser(String username).
+Métodos: addUser(User user), getUser(String username)
 
-RegisterServlet.java:
+RegisterServlet.java
 
-Gestiona el registro de nuevos usuarios y los almacena en Database.
+Recibe los datos de registro y los almacena en la base de datos.
 
-LoginServlet.java:
+LoginServlet.java
 
-Valida las credenciales y establece sesión para el usuario.
+Valida credenciales y establece sesión del usuario.
 
-BmiServlet.java:
+BmiServlet.java
 
-Calcula el IMC del usuario y envía resultados a bmi.jsp.
+Calcula el IMC y envía resultados a la vista bmi.jsp.
 
-LogoutServlet.java:
+LogoutServlet.java
 
-Invalida la sesión y redirige a index.jsp.
+Cierra sesión y redirige a la pantalla principal (index.jsp).
 
-Uso
+💻 Cómo Usar la Aplicación
 
-Desplegar la aplicación en Apache Tomcat 10.
+Despliega la aplicación en Apache Tomcat 10.
 
-Acceder a la aplicación desde un navegador web mediante http://localhost:8080/bmi-webapp/.
+Accede desde tu navegador a: http://localhost:8080/bmi-webapp/
 
-Elegir Registrar Usuario o Iniciar Sesión.
+Elige Registrar Usuario o Iniciar Sesión.
 
-Completar los formularios de registro o login.
+Completa los formularios según corresponda.
 
-Una vez logueado, ingresar peso y altura para calcular el IMC.
+Calcula tu IMC ingresando peso y altura.
 
-Cerrar sesión con la opción disponible para regresar a la pantalla principal.
+Cierra sesión con la opción disponible para volver al inicio.
 
-Notas
+🔒 Notas Importantes
 
 La base de datos está simulada en memoria (Database.java).
 
-Para un proyecto real, se recomienda usar una base de datos persistente y cifrado de contraseñas.
+Para un entorno real:
+
+Usar una base de datos persistente.
+
+Aplicar hashing de contraseñas para mayor seguridad.
+
+Esta versión es ideal para demostraciones y prácticas académicas.
+
+🎉 Contribuciones
+
+Si deseas mejorar esta aplicación:
+
+Agregar almacenamiento real en base de datos.
+
+Mejorar la interfaz con CSS y Bootstrap.
+
+Implementar medidas de seguridad adicionales.
